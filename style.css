@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.header{
+    width: 100%; /* genislik full */
+    height: 80px;   /* 80pxlik bir yükseklik tanımlandı */
+    display: block;  
+    background-color: #101010;
+}
+.innerHader{
+    max-width: 1000px; /* 1536px olan genişlikten 1000px yatayda yer kaplasın  */ /* diğer bir amaç ekranı küçültünce yazıların kayıp olmaması içindir. */
+    height: 100%; /* bulundugu yere göre %100 yüksekliğe sahip olsunn */
+    display: block; 
+    margin: 0 auto; /* üstten ve alttan bosluk yok sagdan ve soldan auto olarak ayarlar iki taraftan esit bosluk */ 
+    /*background-color: red; bunu islem yaparken kullandık daha basit ve anlasılır olması icin*/
+}
+.logo_container{
+    height: 100%;
+    display: table; /* dikeyde ortalamak icin kullanilir. */
+    float: left;
+}
+.logo_container h1{
+    color: white; 
+    height: 100%;
+    display: table-cell; /* yaziyi dikeyde ortalamak icin kullanilir.*/
+    vertical-align: middle; /* bu komutla birlikte yazi dikeyde tam olarak ortalandi. */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 200;
+}
+.logo_container h1 span{
+    font-weight: 800;
+}
+.navigation{
+    float: right; /* hepsi sag tarafa geçer */
+    height: 100%;
+}
+.navigation a{
+    height: 100%; /* her biri yüksekliği 80px olarak olur !!!!! */
+    display: table; /* dikeyde ortalanır olmazsa 80px olarak olmaz */
+    float: left; /* dikeyde alt alta sıralıyken bununla birlikte soldan sağa doğru sıralanır.*/ 
+    padding: 0 20px; /* sagdan soldan 20px kadar bosluklar olusur. */ 
+}
+.navigation a li{
+    display: table-cell; /* bu ikisi sayesinde ortalanıyor birinden birisi olmazsa ortalanmıyor. */ 
+    vertical-align: middle;
+    height: 100%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+.navigation a:last-child{
+    padding-right: 0; /* en sondaki en saga yapaşacaktır. */
+}
